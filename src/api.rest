@@ -1,0 +1,33 @@
+###
+GET http://localhost:3000/mascotas/hello
+
+###
+GET http://localhost:3000/mascotas
+
+###
+GET http://localhost:3000/mascotas/3
+
+###
+POST http://localhost:3000/mascotas
+Content-Type: application/json
+
+{
+    "tipo": "Perro",
+    "raza": "Chau-chau",
+    "alimentacion": "croquetas",
+    "vacunas": "El parvovirus canino, moquillo, hepatitis canina y la rabia",
+    "edad": 1,
+    "precio": 12000
+    
+}
+
+###
+DELETE http://localhost:3000/mascotas/3
+
+###
+PUT http://localhost:3000/mascotas/1
+Content-Type: application/json
+
+{
+    "precio": 18000
+}
